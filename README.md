@@ -24,7 +24,6 @@ This repository contains the source code of pydnet, proposed in the paper "Neura
   booktitle = {IEEE/JRS Conference on Intelligent Robots and Systems (IROS)},
   year = {2018}
 }
-
 ```
 ### monodepth
 ```
