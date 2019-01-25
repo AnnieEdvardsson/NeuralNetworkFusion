@@ -14,7 +14,6 @@ This repository contains the source code of pydnet, proposed in the paper "Neura
 ### pydnet
 
 ```
-
 @inproceedings{pydnet18,
   title     = {Towards real-time unsupervised monocular depth estimation on CPU},
   author    = {Matteo Poggi and
