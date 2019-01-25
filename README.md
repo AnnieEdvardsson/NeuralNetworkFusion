@@ -26,3 +26,14 @@ This repository contains the source code of pydnet, proposed in the paper "Neura
 }
 
 ```
+### monodepth
+```
+@inproceedings{monodepth17,
+  title     = {Unsupervised Monocular Depth Estimation with Left-Right Consistency},
+  author    = {Cl{\'{e}}ment Godard and
+               Oisin {Mac Aodha} and
+               Gabriel J. Brostow},
+  booktitle = {CVPR},
+  year = {2017}
+}
+```
