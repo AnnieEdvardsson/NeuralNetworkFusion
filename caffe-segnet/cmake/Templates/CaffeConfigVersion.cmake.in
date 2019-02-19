@@ -1,11 +1,3 @@
-set(PACKAGE_VERSION "@Caffe_VERSION@")
- 
-# Check whether the requested PACKAGE_FIND_VERSION is compatible
-if("${PACKAGE_VERSION}" VERSION_LESS "${PACKAGE_FIND_VERSION}")
-  set(PACKAGE_VERSION_COMPATIBLE FALSE)
-else()
-  set(PACKAGE_VERSION_COMPATIBLE TRUE)
-  if ("${PACKAGE_VERSION}" VERSION_EQUAL "${PACKAGE_FIND_VERSION}")
-    set(PACKAGE_VERSION_EXACT TRUE)
-  endif()
-endif()
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ec09afef65ad3c7f175914c05447d1cd8acc09ba6968ee7c8666051721848bb
+size 378

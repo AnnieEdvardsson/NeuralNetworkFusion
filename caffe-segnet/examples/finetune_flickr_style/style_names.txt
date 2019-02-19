@@ -1,20 +1,3 @@
-Detailed
-Pastel
-Melancholy
-Noir
-HDR
-Vintage
-Long Exposure
-Horror
-Sunny
-Bright
-Hazy
-Bokeh
-Serene
-Texture
-Ethereal
-Macro
-Depth of Field
-Geometric Composition
-Minimal
-Romantic
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe5d3f46cb42040825bf2b48442a2a060a4bab6a9437b51f76ce397ea13e41da
+size 173

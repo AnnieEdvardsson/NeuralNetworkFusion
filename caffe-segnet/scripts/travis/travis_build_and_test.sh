@@ -1,34 +1,3 @@
-#!/bin/bash
-# Script called by Travis to do a CPU-only build of and test Caffe.
-
-set -e
-MAKE="make --jobs=$NUM_THREADS --keep-going"
-
-if $WITH_CMAKE; then
-  mkdir build
-  cd build
-  cmake -DBUILD_python=ON -DCMAKE_BUILD_TYPE=Release -DCPU_ONLY=ON ..
-  $MAKE
-  if ! $WITH_CUDA; then
-    $MAKE runtest
-    $MAKE lint
-  fi
-  $MAKE clean
-  cd -
-else
-  if ! $WITH_CUDA; then
-    export CPU_ONLY=1
-  fi
-  $MAKE all test pycaffe warn lint || true
-  if ! $WITH_CUDA; then
-    $MAKE runtest
-  fi
-  $MAKE all
-  $MAKE test
-  $MAKE pycaffe
-  $MAKE pytest
-  $MAKE warn
-  if ! $WITH_CUDA; then
-    $MAKE lint
-  fi
-fi
+version https://git-lfs.github.com/spec/v1
+oid sha256:19998fce99d26e07e465b619a9405fe69a8244d2767ab3e2a51f3bf3a5483dca
+size 603

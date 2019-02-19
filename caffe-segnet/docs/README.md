@@ -1,5 +1,3 @@
-# Caffe Documentation
-
-To generate the documentation, run `$CAFFE_ROOT/scripts/build_docs.sh`.
-
-To push your changes to the documentation to the gh-pages branch of your or the BVLC repo, run `$CAFFE_ROOT/scripts/deploy_docs.sh <repo_name>`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:42c70515daa35e0c590094aa21f11e8bb957fb9411a88e730315df5985c31592
+size 241

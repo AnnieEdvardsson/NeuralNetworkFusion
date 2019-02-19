@@ -1,32 +1,3 @@
-/* Sources directory */
-#define SOURCE_FOLDER "${PROJECT_SOURCE_DIR}"
-
-/* Binaries directory */
-#define BINARY_FOLDER "${PROJECT_BINARY_DIR}"
-
-/* NVIDA Cuda */
-#cmakedefine HAVE_CUDA
-
-/* NVIDA cuDNN */
-#cmakedefine HAVE_CUDNN
-#cmakedefine USE_CUDNN
-
-/* NVIDA cuDNN */
-#cmakedefine CPU_ONLY
-
-/* Test device */
-#define CUDA_TEST_DEVICE ${CUDA_TEST_DEVICE}
-
-/* Temporary (TODO: remove) */
-#if 1
-  #define CMAKE_SOURCE_DIR SOURCE_FOLDER "/src/"
-  #define EXAMPLES_SOURCE_DIR BINARY_FOLDER "/examples/"
-  #define CMAKE_EXT ".gen.cmake"
-#else
-  #define CMAKE_SOURCE_DIR "src/"
-  #define EXAMPLES_SOURCE_DIR "examples/"
-  #define CMAKE_EXT ""
-#endif
-
-/* Matlab */
-#cmakedefine HAVE_MATLAB
+version https://git-lfs.github.com/spec/v1
+oid sha256:1ebd65f579f8e8261b4096da1c08317d391e8a8d9791852cf731925499749fe4
+size 682

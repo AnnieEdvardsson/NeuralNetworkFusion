@@ -1,19 +1,3 @@
-function results = run_tests()
-% results = run_tests()
-%   run all tests in this caffe matlab wrapper package
-
-% use CPU for testing
-caffe.set_mode_cpu();
-
-% reset caffe before testing
-caffe.reset_all();
-
-% put all test cases here
-results = [...
-  run(caffe.test.test_net) ...
-  run(caffe.test.test_solver) ];
-
-% reset caffe after testing
-caffe.reset_all();
-
-end
+version https://git-lfs.github.com/spec/v1
+oid sha256:33902b1b2d61fe6c51ad7b588b066c68425ba707bd292104f1fc54a0861e1b56
+size 363

@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
-./build/tools/caffe train \
-    --solver=models/bvlc_reference_caffenet/solver.prototxt \
-    --snapshot=models/bvlc_reference_caffenet/caffenet_train_10000.solverstate
+version https://git-lfs.github.com/spec/v1
+oid sha256:a953faa156db3a81e5f5c51b711ff44e719b81bde0d895df12b4754fc26c7012
+size 188

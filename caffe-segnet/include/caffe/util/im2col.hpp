@@ -1,32 +1,3 @@
-#ifndef _CAFFE_UTIL_IM2COL_HPP_
-#define _CAFFE_UTIL_IM2COL_HPP_
-
-namespace caffe {
-
-template <typename Dtype>
-void im2col_cpu(const Dtype* data_im, const int channels,
-    const int height, const int width, const int kernel_h, const int kernel_w,
-    const int pad_h, const int pad_w, const int stride_h,
-    const int stride_w, Dtype* data_col);
-
-template <typename Dtype>
-void col2im_cpu(const Dtype* data_col, const int channels,
-    const int height, const int width, const int patch_h, const int patch_w,
-    const int pad_h, const int pad_w, const int stride_h,
-    const int stride_w, Dtype* data_im);
-
-template <typename Dtype>
-void im2col_gpu(const Dtype* data_im, const int channels,
-    const int height, const int width, const int kernel_h, const int kernel_w,
-    const int pad_h, const int pad_w, const int stride_h,
-    const int stride_w, Dtype* data_col);
-
-template <typename Dtype>
-void col2im_gpu(const Dtype* data_col, const int channels,
-    const int height, const int width, const int patch_h, const int patch_w,
-    const int pad_h, const int pad_w, const int stride_h,
-    const int stride_w, Dtype* data_im);
-
-}  // namespace caffe
-
-#endif  // CAFFE_UTIL_IM2COL_HPP_
+version https://git-lfs.github.com/spec/v1
+oid sha256:888b23726f4ae95a6d0184af6f9726becc49a8765b06353f42d1f12e10a56a2a
+size 1193

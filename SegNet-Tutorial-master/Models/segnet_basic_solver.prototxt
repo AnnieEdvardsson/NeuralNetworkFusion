@@ -1,15 +1,3 @@
-net: "/SegNet/Models/segnet_basic_train.prototxt"  		# Change this to the absolute path to your model file
-test_initialization: false
-test_iter: 1
-test_interval: 10000000
-base_lr: 0.1
-lr_policy: "step"
-gamma: 1.0
-stepsize: 10000000
-display: 20
-momentum: 0.9
-max_iter: 10000
-weight_decay: 0.0005
-snapshot: 1000
-snapshot_prefix: "/SegNet/Models/Training/segnet_basic"  	# Change this to the absolute path to where you wish to output solver snapshots
-solver_mode: GPU
+version https://git-lfs.github.com/spec/v1
+oid sha256:aff5c1e268d89add84843bfd21d8ffe7bb602a5d55b2c1d51b7b496a1726e40c
+size 465

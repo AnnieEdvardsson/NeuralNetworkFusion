@@ -1,6 +1,3 @@
-from .pycaffe import Net, SGDSolver
-from ._caffe import set_mode_cpu, set_mode_gpu, set_device, Layer, get_solver
-from .proto.caffe_pb2 import TRAIN, TEST
-from .classifier import Classifier
-from .detector import Detector
-from . import io
+version https://git-lfs.github.com/spec/v1
+oid sha256:c1e56013974dc4e1f8d15ab0ca3da8fad6eaf2e9ad1697de1a83e29808add958
+size 238

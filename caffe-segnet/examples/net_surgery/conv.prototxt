@@ -1,26 +1,3 @@
-# Simple single-layer network to showcase editing model parameters.
-name: "convolution"
-input: "data"
-input_dim: 1
-input_dim: 1
-input_dim: 100
-input_dim: 100
-layer {
-  name: "conv"
-  type: "Convolution"
-  bottom: "data"
-  top: "conv"
-  convolution_param {
-    num_output: 3
-    kernel_size: 5
-    stride: 1
-    weight_filler {
-      type: "gaussian"
-      std: 0.01
-    }
-    bias_filler {
-      type: "constant"
-      value: 0
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e3613952f97ee470ee33114f746fb3868d2f00bd509ee3ed270aa612700d3b1d
+size 440

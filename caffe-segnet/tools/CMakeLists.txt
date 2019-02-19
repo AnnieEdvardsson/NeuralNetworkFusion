@@ -1,29 +1,3 @@
-# Collect source files
-file(GLOB_RECURSE srcs ${CMAKE_CURRENT_SOURCE_DIR}/*.cpp)
-
-# Build each source file independently
-foreach(source ${srcs})
-  get_filename_component(name ${source} NAME_WE)
-
-  # caffe target already exits
-  if(name MATCHES "caffe")
-    set(name ${name}.bin)
-  endif()
-
-  # target
-  add_executable(${name} ${source})
-  target_link_libraries(${name} ${Caffe_LINK})
-  caffe_default_properties(${name})
-
-  # set back RUNTIME_OUTPUT_DIRECTORY
-  caffe_set_runtime_directory(${name} "${PROJECT_BINARY_DIR}/tools")
-  caffe_set_solution_folder(${name} tools)
-
-  # restore output name without suffix
-  if(name MATCHES "caffe.bin")
-    set_target_properties(${name} PROPERTIES OUTPUT_NAME caffe)
-  endif()
-
-  # Install
-  install(TARGETS ${name} DESTINATION bin)
-endforeach(source)
+version https://git-lfs.github.com/spec/v1
+oid sha256:b292bfa034545922b9ce07c8af1be47b5324f7766a8cb2c433cfaa092596824d
+size 791

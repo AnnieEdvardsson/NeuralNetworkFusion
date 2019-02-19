@@ -1,29 +1,3 @@
-// This is simply a script that tries serializing protocol buffer in text
-// format. Nothing special here and no actual code is being tested.
-#include <string>
-
-#include "google/protobuf/text_format.h"
-#include "gtest/gtest.h"
-
-#include "caffe/proto/caffe.pb.h"
-
-#include "caffe/test/test_caffe_main.hpp"
-
-namespace caffe {
-
-class ProtoTest : public ::testing::Test {};
-
-TEST_F(ProtoTest, TestSerialization) {
-  LayerParameter param;
-  param.set_name("test");
-  param.set_type("Test");
-  std::cout << "Printing in binary format." << std::endl;
-  std::cout << param.SerializeAsString() << std::endl;
-  std::cout << "Printing in text format." << std::endl;
-  std::string str;
-  google::protobuf::TextFormat::PrintToString(param, &str);
-  std::cout << str << std::endl;
-  EXPECT_TRUE(true);
-}
-
-}  // namespace caffe
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce96a172d06df0f8b3a4ac0d2fe6bb5834c4f23019f1092cd7f4bbff0bccda73
+size 813

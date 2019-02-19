@@ -1,28 +1,3 @@
-#include <vector>
-
-#include "caffe/common_layers.hpp"
-#include "caffe/layer.hpp"
-#include "caffe/util/math_functions.hpp"
-
-namespace caffe {
-
-template <typename Dtype>
-void SilenceLayer<Dtype>::Forward_gpu(const vector<Blob<Dtype>*>& bottom,
-      const vector<Blob<Dtype>*>& top) {
-  // Do nothing.
-}
-
-template <typename Dtype>
-void SilenceLayer<Dtype>::Backward_gpu(const vector<Blob<Dtype>*>& top,
-      const vector<bool>& propagate_down, const vector<Blob<Dtype>*>& bottom) {
-  for (int i = 0; i < bottom.size(); ++i) {
-    if (propagate_down[i]) {
-      caffe_gpu_set(bottom[i]->count(), Dtype(0),
-                    bottom[i]->mutable_gpu_data());
-    }
-  }
-}
-
-INSTANTIATE_LAYER_GPU_FUNCS(SilenceLayer);
-
-}  // namespace caffe
+version https://git-lfs.github.com/spec/v1
+oid sha256:38eb19f81fed92c63415475bd2c0bce0f456fb410fc1db67240763f606a6d252
+size 735

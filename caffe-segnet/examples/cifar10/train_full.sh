@@ -1,16 +1,3 @@
-#!/usr/bin/env sh
-
-TOOLS=./build/tools
-
-$TOOLS/caffe train \
-    --solver=examples/cifar10/cifar10_full_solver.prototxt
-
-# reduce learning rate by factor of 10
-$TOOLS/caffe train \
-    --solver=examples/cifar10/cifar10_full_solver_lr1.prototxt \
-    --snapshot=examples/cifar10/cifar10_full_iter_60000.solverstate
-
-# reduce learning rate by factor of 10
-$TOOLS/caffe train \
-    --solver=examples/cifar10/cifar10_full_solver_lr2.prototxt \
-    --snapshot=examples/cifar10/cifar10_full_iter_65000.solverstate
+version https://git-lfs.github.com/spec/v1
+oid sha256:08511562ea5a10d082d18f8f570cb8681abc802327c618d155de692635cca114
+size 508

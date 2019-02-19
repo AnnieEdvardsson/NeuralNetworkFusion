@@ -1,7 +1,3 @@
-defaults:
-  -
-    scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:a3a9d517df629f00c7e39983e56a105a02dff4b8cc15cbeb0fd792d36bad3887
+size 131

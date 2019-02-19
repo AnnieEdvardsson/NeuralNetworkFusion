@@ -1,8 +1,3 @@
-function reset_all()
-% reset_all()
-%   clear all solvers and stand-alone nets and reset Caffe to initial status
-
-caffe_('reset');
-is_valid_handle('get_new_init_key');
-
-end
+version https://git-lfs.github.com/spec/v1
+oid sha256:fe5d607be15da8091b35c888e4baf48416a8961ce948677d95378d37f730efec
+size 172

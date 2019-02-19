@@ -1,13 +1,3 @@
-net: "examples/finetune_pascal_detection/pascal_finetune_trainval_test.prototxt"
-test_iter: 100
-test_interval: 1000
-base_lr: 0.001
-lr_policy: "step"
-gamma: 0.1
-stepsize: 20000
-display: 20
-max_iter: 100000
-momentum: 0.9
-weight_decay: 0.0005
-snapshot: 10000
-snapshot_prefix: "examples/finetune_pascal_detection/pascal_det_finetune"
+version https://git-lfs.github.com/spec/v1
+oid sha256:bef2866ca0f8b6daf2ae46693f99694cfe6d00e22d9a2da34258baa05546a3a5
+size 330

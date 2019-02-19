@@ -1,17 +1,3 @@
-net: "examples/mnist/mnist_autoencoder.prototxt"
-test_state: { stage: 'test-on-train' }
-test_iter: 500
-test_state: { stage: 'test-on-test' }
-test_iter: 100
-test_interval: 500
-test_compute_loss: true
-base_lr: 0.01
-lr_policy: "fixed"
-display: 100
-max_iter: 65000
-weight_decay: 0.0005
-snapshot: 10000
-snapshot_prefix: "examples/mnist/mnist_autoencoder_adagrad_train"
-# solver mode: CPU or GPU
-solver_mode: GPU
-solver_type: ADAGRAD
+version https://git-lfs.github.com/spec/v1
+oid sha256:74b7c7f637b1d40ee5a6d265bd61405078dd76e4c1d8983480b746d01a9fc017
+size 428

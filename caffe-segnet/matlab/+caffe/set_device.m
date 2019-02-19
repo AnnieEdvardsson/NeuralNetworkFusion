@@ -1,11 +1,3 @@
-function set_device(device_id)
-% set_device(device_id)
-%   set Caffe's GPU device ID
-
-CHECK(isscalar(device_id) && device_id >= 0, ...
-  'device_id must be non-negative integer');
-device_id = double(device_id);
-
-caffe_('set_device', device_id);
-
-end
+version https://git-lfs.github.com/spec/v1
+oid sha256:86f546cc09784c58c97a0c4fd39e9b72d253674c9a77d1a6e4cc187b1ee4e49d
+size 250

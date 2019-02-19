@@ -1,23 +1,3 @@
-#ifdef USE_CUDNN
-#include "caffe/util/cudnn.hpp"
-
-namespace caffe {
-namespace cudnn {
-
-float dataType<float>::oneval = 1.0;
-float dataType<float>::zeroval = 0.0;
-const void* dataType<float>::one =
-    static_cast<void *>(&dataType<float>::oneval);
-const void* dataType<float>::zero =
-    static_cast<void *>(&dataType<float>::zeroval);
-
-double dataType<double>::oneval = 1.0;
-double dataType<double>::zeroval = 0.0;
-const void* dataType<double>::one =
-    static_cast<void *>(&dataType<double>::oneval);
-const void* dataType<double>::zero =
-    static_cast<void *>(&dataType<double>::zeroval);
-
-}  // namespace cudnn
-}  // namespace caffe
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:765b75ec26dd65df9147a757fecce313ada14c6822d58969836f07ee3e7cb4d7
+size 646

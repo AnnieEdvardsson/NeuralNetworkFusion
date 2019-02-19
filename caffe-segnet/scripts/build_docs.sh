@@ -1,20 +1,3 @@
-#!/bin/bash
-# Build documentation for display in web browser.
-
-PORT=${1:-4000}
-
-echo "usage: build_docs.sh [port]"
-
-# Find the docs dir, no matter where the script is called
-ROOT_DIR="$( cd "$(dirname "$0")"/.. ; pwd -P )"
-cd $ROOT_DIR
-
-# Gather docs.
-scripts/gather_examples.sh
-
-# Generate developer docs.
-make docs
-
-# Display docs using web server.
-cd docs
-jekyll serve -w -s . -d _site --port=$PORT
+version https://git-lfs.github.com/spec/v1
+oid sha256:650f312bd4d584123a15fef074c8c7efba9b842794e23dc40332bd5ddc20b1d1
+size 402

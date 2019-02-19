@@ -1,14 +1,3 @@
-net: "hdf5_classification/train_val.prototxt"
-test_iter: 250
-test_interval: 1000
-base_lr: 0.01
-lr_policy: "step"
-gamma: 0.1
-stepsize: 5000
-display: 1000
-max_iter: 10000
-momentum: 0.9
-weight_decay: 0.0005
-snapshot: 10000
-snapshot_prefix: "hdf5_classification/data/train"
-solver_mode: CPU
+version https://git-lfs.github.com/spec/v1
+oid sha256:03967b9a3644db714dd4c0b68f1a642dcbe4510837384b2175276f4828da5a58
+size 287
